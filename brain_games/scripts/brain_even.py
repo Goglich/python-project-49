@@ -6,7 +6,7 @@ name = prompt.string('May I have your name? ')
 print(f'Hello, {name}!')
 
 
-def game():
+def main():
     print('Answer "yes" if the number is even, otherwise answer "no".')
     def quest(): 
         result = 0   
@@ -32,4 +32,6 @@ def game():
             quest()
     if counter == 2:
         print(f'Congratulations, {name}!')
-game()
+
+if __name__ == 'main':
+    main()
