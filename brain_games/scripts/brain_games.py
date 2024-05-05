@@ -1,11 +1,7 @@
 #!/usr/bin/env python3
-from brain_games import cli
+from brain_games.cli import welcome_user
 
 
-def main():
+def dick():
     print('Welcome to the Brain Games!')
-    cli.welcome_user()
-
-
-if __name__ == '__main__':
-    main()
+    welcome_user()
