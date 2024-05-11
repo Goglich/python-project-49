@@ -1,4 +1,4 @@
-from brain_games.scripts.engine import game
+from brain_games.engine import game
 from brain_games.games.gcd import gcd_logic
 from brain_games.games.gcd import start_question
 
