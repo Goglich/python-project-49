@@ -16,7 +16,7 @@ def game(logic, exercise):
             correct += 1
         else:
             print(f"{us_ans} is wrong answer ;(. Correct answer was {answer}.")
-            print(f"Let's try again, {name}")
+            print(f"Let's try again, {name}!")
             correct = 0
             return correct
     if correct == 3:
