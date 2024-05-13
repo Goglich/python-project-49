@@ -17,6 +17,7 @@ Before installing the program, make sure that you have the following components 
 Once you have made sure that all the necessary components are installed, you can begin installing brain-games:
 ```
 git clone https://github.com/Goglich/python-project-49.git
+cd python-project-49/
 make package-install
 ```
 
