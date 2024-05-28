@@ -10,7 +10,7 @@ def gcd_logic():
         num1 = random.randint(2, 150)
         num2 = random.randint(2, 150)
     answer = str(math.gcd(num1, num2))
-    question = f"Question : {num1} {num2}"
+    question = f"Question: {num1} {num2}"
 
     return question, answer
 
