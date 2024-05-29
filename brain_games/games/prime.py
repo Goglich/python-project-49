@@ -5,7 +5,7 @@ def prime_logic():
     num = random.randint(2, 50)
     print(num)
     counter = 1  # counter will show how many times
-     #the number has been divided without a remainder
+    # the number has been divided without a remainder
     divider = 1
     answer = ""
     while counter < 3:
