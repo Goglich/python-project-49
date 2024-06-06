@@ -1,11 +1,11 @@
 from brain_games.engine import game
-from brain_games.games.even import even_logic
-from brain_games.games.even import exercise
+from brain_games.games.even import generate_game
+from brain_games.games.even import EXERCISE
 
 
 def main():
-    game(even_logic, exercise)
+    game(generate_game, EXERCISE)
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     main()

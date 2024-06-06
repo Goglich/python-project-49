@@ -1,7 +1,10 @@
 import random
 
 
-def progression_logic():
+EXERCISE = 'What number is missing in the progression?'
+
+
+def generate_game():
     step = random.randint(2, 9)
     quantity = random.randint(5, 10)
     first_num = random.randint(1, 5)
@@ -11,15 +14,10 @@ def progression_logic():
     while current_quantity <= quantity:
         if current_quantity == replace_num:
             answer = str(first_num + step * current_quantity)
-            progression += " " + ".."
+            progression += ' ' + '..'
             current_quantity += 1
         else:
-            progression += " " + str(first_num + step * current_quantity)
+            progression += ' ' + str(first_num + step * current_quantity)
             current_quantity += 1
-    question = f'Question: {progression}'
+    question = progression
     return question, answer
-
-
-def exercise():
-    exercise = 'What number is missing in the progression?'
-    return exercise

@@ -1,11 +1,11 @@
 from brain_games.engine import game
-from brain_games.games.gcd import gcd_logic
-from brain_games.games.gcd import exercise
+from brain_games.games.gcd import generate_game
+from brain_games.games.gcd import EXERCISE
 
 
 def main():
-    game(gcd_logic, exercise)
+    game(generate_game, EXERCISE)
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     main()
