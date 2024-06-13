@@ -2,7 +2,7 @@ import math
 import random
 
 
-EXERCISE = 'Find the greatest common divisor of given numbers.'
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 MIN_NUM = 2
 MAX_NUM = 150
 

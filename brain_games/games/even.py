@@ -1,7 +1,7 @@
 import random
 
 
-EXERCISE = 'Answer "yes" if the number is even, otherwise answer "no".'
+DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 MIN_NUM = 1
 MAX_NUM = 50
 
@@ -17,7 +17,7 @@ def generate_game():
     random_num = random.randint(MIN_NUM, MAX_NUM)
     question = random_num
 
-    if is_even(random_num) is True:
+    if is_even(random_num):
         answer = 'yes'
     else:
         answer = 'no'

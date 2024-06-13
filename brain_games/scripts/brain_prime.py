@@ -1,10 +1,9 @@
-from brain_games.engine import game
-from brain_games.games.prime import generate_game
-from brain_games.games.prime import EXERCISE
+from brain_games.engine import engine_game
+from brain_games.games import prime
 
 
 def main():
-    game(generate_game, EXERCISE)
+    engine_game(prime)
 
 
 if __name__ == '__main__':
