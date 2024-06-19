@@ -2,21 +2,21 @@ from brain_games.cli import welcome_user
 import prompt
 
 
-ROUNDS_QUANTITY = 3
+ROUNDS_COUNT = 3
 
 
-def engine_game(game):
+def play_game(game):
     name = welcome_user()
-    start_quest = game.DESCRIPTION
-    print(start_quest)
-    for _ in range(ROUNDS_QUANTITY):
+    print(game.DESCRIPTION)
+    for _ in range(ROUNDS_COUNT):
         question, answer = game.generate_game()
         print(f'Question: {question}')
-        us_ans = prompt.string('Your answer: ')
-        if us_ans == answer:
+        user_answer = prompt.string('Your answer: ')
+        if user_answer == answer:
             print('Correct!')
         else:
-            print(f'{us_ans} is wrong answer ;(. Correct answer was {answer}.')
+            print(f'{user_answer} is wrong answer ;(. '
+                  f'Correct answer was {answer}.')
             print(f"Let's try again, {name}!")
             return
     print(f'Congratulations, {name}!')

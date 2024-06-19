@@ -9,7 +9,7 @@ MAX_NUM = 50
 def is_even(num):
     if num % 2 == 0:
         return True
-    elif num % 2 != 0:
+    else:
         return False
 
 
@@ -21,5 +21,4 @@ def generate_game():
         answer = 'yes'
     else:
         answer = 'no'
-
     return question, answer

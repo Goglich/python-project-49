@@ -7,12 +7,9 @@ MAX_NUM = 50
 
 
 def is_prime(num):
-    divider = 2
-    while divider < num - 1:
-        if num % divider == 0:
+    for _ in range(2, num - 1):
+        if num % _ == 0:
             return False
-        else:
-            divider += 1
     return True
 
 

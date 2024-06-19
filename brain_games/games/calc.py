@@ -17,6 +17,6 @@ def generate_game():
         answer = str(random_num1 + random_num2)
     elif random_element == '-':
         answer = str(random_num1 - random_num2)
-    else:
+    elif random_element == '*':
         answer = str(random_num1 * random_num2)
     return question, answer
